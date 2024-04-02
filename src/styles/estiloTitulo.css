@@ -1,0 +1,126 @@
+#container {
+   
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #73B3E8;
+    font-size: 45px;
+  }
+  
+  .div1er {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    font-family: "Dank Mono", ui-monospace, monospace; /* Agregar la fuente aquí */
+   
+  }
+ 
+  .div1er:first-of-type {
+    animation: showup 7s infinite;
+  }
+ 
+  .div1er:last-of-type {
+  
+    width: 0px;
+    animation: reveal 7s infinite;
+   
+  }
+  
+  .div1er:last-of-type span {
+    margin-left: -355px;
+    animation: slidein 7s infinite;
+    
+    font-family: "Dank Mono", ui-monospace, monospace  !important; /* Agregar la fuente aquí */
+    font-weight: bold; /* Aumenta el grosor de la letra */
+    font-size: 52px !important;
+
+
+}
+
+  
+  @keyframes showup {
+    0% {
+      opacity: 0;
+    }
+  
+    20% {
+      opacity: 1;
+    }
+  
+    80% {
+      opacity: 1;
+    }
+  
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  @keyframes slidein {
+    0% {
+      margin-left: -800px;
+    }
+  
+    20% {
+      margin-left: -800px;
+    }
+  
+    35% {
+      margin-left: 0px;
+    }
+  
+    100% {
+      margin-left: 0px;
+    }
+  }
+  
+  @keyframes reveal {
+    0% {
+      opacity: 0;
+      width: 0px;
+    }
+  
+    20% {
+      opacity: 1;
+      width: 0px;
+    }
+  
+    30% {
+      width: 355px;
+    }
+  
+    80% {
+      opacity: 1;
+    }
+  
+    100% {
+      opacity: 0;
+      width: 355px;
+    }
+  }
+  /* /////////////////////////////////psrs el titulo */
+#hoverPointer {
+    --s: 0.1em;   /* the thickness of the line */
+    --c: #368E83; /* the color */
+    
+    color:#A686EE;
+    padding-bottom: var(--s);
+    background: 
+      linear-gradient(90deg,var(--c) 50%,#000 0) calc(100% - var(--_p,0%))/200% 100%,
+      linear-gradient(var(--c) 0 0) 0% 100%/var(--_p,0%) var(--s) no-repeat;
+    -webkit-background-clip: text,padding-box;
+            background-clip: text,padding-box;
+    transition: 0.5s;
+  }
+  #hoverPointer:hover {--_p: 100%}
+  
+  #hoverPointer {
+  /*   font-family: system-ui, sans-serif;
+    */font-size: 2rem; 
+    cursor: pointer;
+  }

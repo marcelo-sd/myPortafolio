@@ -1,0 +1,245 @@
+/* ///////////////////esto es para que baje el div contenedor///////////// */
+
+@keyframes slideDown {
+    0% {
+      transform: translateY(-50vh);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  #div1 {
+    background: #183E49;
+    height: 450px;
+    width: 900px;
+    position: absolute;
+   
+    top: 10%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+    animation: slideDown 2s ease-out forwards;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #33827B; /* Aquí agregamos el borde de 3px de color azul */
+    border-radius: 5px;
+    gap:20px
+}
+
+  
+  .avatar{
+    height: 60px;
+    grid-area: c;
+  }
+
+
+  
+  
+
+
+/*   /////////////////////////77vamos a crear una grd ///////////
+ */  
+
+
+.sec2do{
+    margin-left: 20px;
+    margin-right: -150px;
+    /* background: #e8ec11;  */
+    width: 50%;
+    height: 280px;
+}
+  
+.sec1er{
+    margin-left: -100px;
+    /* background: #afb419 ; */
+    /* width: 50%;
+    height: 65%; */
+}
+
+
+
+
+
+.contenedor-botones{
+    margin-top: 85px;
+}
+/* ///////////////////////////contenedor de tecnologias */
+.conteiner-tecn {
+  display: flex; /* Utilizamos flexbox */
+  flex-direction: column; /* Mostrar los hijos en columnas */
+  align-items: center; /* Centrar los elementos hijos horizontalmente */
+  gap: 15px; /* Espacio de 50px entre los elementos hijos */
+  
+  position: relative;
+  bottom: -20px;
+
+}
+/* 777777777777777777777777777777imagen */
+.photo{
+  position: relative; /* Cambiado a posición relativa */
+  display: inline-block; /* Cambiado a inline-block para que el contenedor ajuste su tamaño al contenido */
+  margin-left: -45px;
+}
+
+.photo img{
+  width: 200px;
+  height: 280px;
+  object-fit: cover;
+  filter: grayscale(100%) contrast(120%);
+  box-shadow: 10px 15px 25px 0 rgba(0,0,0,.2);
+  transition: all .5s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.photo:hover img{
+  box-shadow: 1px 1px 10px 0 rgba(0,0,0,.1);
+}
+
+.photo .glow-wrap{
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+
+.photo .glow{
+  display: block;
+  position: relative; 
+  width: 40%;
+  height: 200%;
+  background: rgba(255,255,255,.2);
+  top: 0;
+  filter: blur(5px);
+  transform: rotate(45deg) translate(-450%, 0);
+  transition: all .5s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.photo:hover .glow{
+  transform: rotate(45deg) translate(450%, 0);
+  transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.photo:hover img,
+.photo:hover .glow-wrap{
+  margin-top: 0;
+}
+/* 7777777777777777777777777contenedor de botones 7777777777 */
+.contenedor-botones {
+  /* background: #2f800d */
+  display: flex;
+  justify-content: center; /* Centra los elementos hijos horizontalmente */
+  align-items: center; /* Centra los elementos hijos verticalmente */
+  text-align: center; /* Centra el texto dentro de los elementos hijos */
+}
+/* ////////////////////////////canvas////////////////////// */
+#w-80 {
+ 
+  background: #1B3039;
+  color:#7FD6A8 ;
+  width: 40%;
+}
+.contendorIcons{
+  background: #000;
+}
+
+
+
+
+
+
+
+
+
+/* ///////////////////////////////////responsive///////////////////*/
+@media (max-width: 800px) {
+  #div1 {
+  
+    display: flex;
+    flex-direction: column;
+    width: 330px;
+margin-left: -20px;
+    height: 600px; 
+}
+/* //////////////////////////titulo////////////////// */
+#container{
+ /*  background: #dcb805; */
+  display: flex;
+    flex-direction: column;
+    width:270px;
+    font-size: 13px;
+}
+.div1er{
+  font-size: 25px;
+/*   background: #e58107; */
+ 
+}
+ .div1er:last-of-type {
+ /*  background: #4ba705; */
+  width: 250px !important;
+  height: 35px;
+
+
+ }
+#hoverPointer{
+/*   background: #0c0a91 !important; */
+  font-size: 37px !important;
+  position: relative;
+  top: -10px;
+  font-family: "Dank Mono", ui-monospace, monospace  !important; 
+
+}
+/* ////////////////////////////////////////foto/////////// */
+.photo{
+  height: 190px;
+  width: 180px;
+  position: relative;
+   left: 75px;
+   bottom: 20px;
+}
+.photo img{
+  height: 190px;
+  width: 180px;
+}
+/* ///////////////////////tecnologias////////////////// */
+.sec2do{
+ 
+  height: 130px;
+  width: 250px;
+  position: relative;
+  left: -85px;
+  bottom: 80px;
+}
+.h2tecno{
+  font-size: 30px !important;
+  position: relative;
+  top: 20px;
+}
+#text{
+  font-size: 25px;
+}
+.console-container{
+  width: 230px !important;
+  height: 50px !important;
+
+}
+/* /////////////////botones////////////////////// */
+
+.contenedor-botones{
+
+  height: 100px !important;
+  width: 255px;
+  position: relative;
+  bottom: 20px;
+}
+.btn-group button {
+  padding: 3px 1px; /* Ajusta los valores según tus preferencias */
+  
+}
+#w-80 {
+  width: 80%;
+  background: #1B3039;
+  color:#7FD6A8 ;
+}
+
+}

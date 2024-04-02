@@ -1,0 +1,138 @@
+/* * {
+    padding: 0%;
+    margin: 0%;
+    text-decoration: none;
+    list-style: none;
+  }
+  
+  nav {
+    height: 80px;
+    width: 100%;
+    background-color: red;
+  }
+  .enlace {
+    position: absolute;
+    padding: 20px 50px;
+  }
+  .icono {
+    height: 40px;
+  }
+  .logo {
+    height: 40px;
+  }
+  nav ul {
+    float: right;
+    margin-right: 20px;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+  }
+  nav ul li a {
+    color: aquamarine;
+    font-size: 18px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+  }
+  
+  li a.active,
+  li a:hover {
+    background: blueviolet;
+    transition: 0.5s;
+  }
+  .checkbtn {
+    font-size: 30px;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  #check {
+    display: none;
+  }
+  
+  ul {
+    background-color: green;
+  }
+  
+  li {
+    background-color: blue;
+  }
+  
+  
+   
+
+
+  
+  @media (max-width: 925px) {
+    .enlace {
+      padding-left: 20px;
+    }
+    nav ul li a {
+      font-size: 16px;
+    }
+  }
+  
+  @media (max-width: 700px) {
+    .checkbtn {
+      display: block;
+    }
+    ul {
+      position: fixed;
+      width: 80%;
+      height: 100vh;
+      background: #313fdd;
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all 0.5s;
+  
+      display: flex; 
+      flex-direction: column;
+    
+      align-items: center;
+    }
+    nav ul li {
+      margin: 10px 0;
+      line-height: 35px;
+    
+    }
+    nav ul li a {
+      font-size: 20px;
+    }
+    li a:hover,
+    li a.active {
+      background: none;
+      color: red;
+    }
+    #check:checked ~ ul {
+      left: 0;
+    }
+  }
+ */
+
+
+  body{
+    background:#0A192F;
+    
+    min-block-size: 100%;
+    min-inline-size: 100%;
+    box-sizing: border-box;
+    display: grid;
+    place-content: center;
+    font-family: system-ui;
+    font-size: cover;
+  }  
+  /* ///////////////////responsive//////////// */
+  @media (max-width: 800px) {
+    body{
+    
+      display: flex;
+      justify-content: center;
+      align-items: center; /* Centra verticalmente */
+      padding: 0px;
+  }}

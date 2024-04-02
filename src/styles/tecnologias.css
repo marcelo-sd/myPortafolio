@@ -1,0 +1,27 @@
+.contenedor-icons{
+   
+    font-family: "Dank Mono", ui-monospace, monospace;
+}
+.item-icons{
+    background: #183E49;
+    transition: transform 0.3s ease; /* Agregar transición suave */
+    border-radius: 5px;
+}
+.item-icons:hover {
+    transform: scale(1.06); /* Aumentar el tamaño en un 10% */
+}
+
+.sub-Items{
+/*     background: #022f2c;  */
+    height: 40px; 
+  
+}
+.sub-Items > * {
+    display: inline-block;
+    margin-right: 15px; / 
+  
+}
+.imgIc{
+    height: 32px;
+    width: 32px;
+}
